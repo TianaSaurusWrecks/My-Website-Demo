@@ -53,11 +53,11 @@ nav {
 }
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { (commented this out becasue it was making the logo squish)
     .logo img {
         height: 25px;
     }
-}
+} */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -702,6 +702,8 @@ thead {
         padding: 14px;
         border-top: 1px solid #ccc;
     }
+
+    
 
 }
 
