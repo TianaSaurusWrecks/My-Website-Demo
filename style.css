@@ -409,6 +409,33 @@ nav ul li a:hover {
 
 }
 
+@media (max-width: 768px) {
+    .contact-banner1 {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-banner1 img {
+        max-height: 350px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-banner1 {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-banner1 img {
+        max-height: 250px;
+    }
+}
+
+
+
 
 .contact-details {
     text-align: center;
