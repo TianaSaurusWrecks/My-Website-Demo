@@ -24,7 +24,11 @@
                 <div class="brand-name">HOKKAIDO SNOWFIELD</div>
 
             </div>
-            
+              <!--Hamburger button for mobile-->
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+
             <div class="nav-links-container">
                 <ul>
                     
@@ -216,7 +220,15 @@
 
 
     </footer>
+ <script>
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links-container');
 
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+  </script>
 
 </body>
 </html>

@@ -628,3 +628,109 @@ thead {
     height: 330px;
     object-fit:cover;
 }
+
+/* Responsiveness section for mobile nav and styling */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: #042b53;
+    cursor: pointer;
+}
+
+/* for screens 768px and below */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .nav-links-container {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links-container.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a, .nav-btn {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        border-top: 1px solid #ccc;
+    }
+
+}
+
+/* Responsiveness for the footer section */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer .brand-container {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .footer .social-icons-container ul {
+        justify-content: center;
+    }
+
+    .footer .copyright p {
+        font-size: 14px;
+    }
+
+}
+
+/* make the hero section responsive so book now btn doesn't disappear on mobile */
+@media (max-width: 768px) {
+    .hero-img {
+        max-height: 350px; /* shrinks image */
+    }
+
+    .hero-overlay {
+        font-size: 22px;
+        padding: 0 20px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        max-height: 250px;
+    }
+
+    .hero-overlay {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+}
